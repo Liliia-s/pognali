@@ -1,6 +1,8 @@
-
+@import "mixins";
+@import "variables";
 @import "normalize";
 @import "font-face";
-@import "variables";
 @import "outlines";
+@import "main";
 @import "blocks/visually-hidden";
+@import "blocks/main-nav";
