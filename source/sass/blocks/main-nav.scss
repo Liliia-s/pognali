@@ -1,4 +1,50 @@
 .main-nav {
-
-
+  padding: 26px;
 }
+
+.main-nav__wrapper-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__toggle {
+  position: relative;
+  width: 25px;
+  height: 13px;
+  border: none;
+  margin-top: 5px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 3px;
+    background-color: $color-white;
+  }
+
+  &::after {
+    transform: translateY(8px);
+  }
+}
+
+.main-nav__title {
+  @include reset-indent;
+  padding-top: 65px;
+  padding-bottom: 50px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: $font-weight-medium;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-nav__wrapper-menu {
+  @include reset-list;
+}
+
+.main-nav__auth {
+}
+

@@ -1,26 +1,26 @@
 // ----INDEX-----------------------------------
 
-body {
-  background: url("../img/pognali-index-mobile-menu.jpg") no-repeat;
-  min-height: 5377px;
-  opacity: 0.2;
-}
+// body {
+//   background: url("../img/pognali-index-mobile-menu.jpg") no-repeat;
+//   min-height: 5377px;
+//   opacity: 0.2;
+// }
 
-@media (min-width: $tablet-width) {
-  body {
-  background: url("../img/pognali-index-tablet-menu.jpg") no-repeat;
-    min-height: 6471px;
-    opacity: 0.2;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   body {
+//     background: url("../img/pognali-index-tablet-menu.jpg") no-repeat;
+//     min-height: 6471px;
+//     opacity: 0.2;
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  body {
-  background: url("../img/pognali-index-desktop.jpg") no-repeat;
-    min-height: 5250px;
-    opacity: 0.2;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   body {
+//     background: url("../img/pognali-index-desktop.jpg") no-repeat;
+//     min-height: 5250px;
+//     opacity: 0.2;
+//   }
+// }
 
 // ----CATALOG-----------------------------------
 

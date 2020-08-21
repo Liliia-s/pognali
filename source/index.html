@@ -19,14 +19,17 @@
 <body>
   <header>
     <nav class="main-nav">
-      <picture>
-        <source media="min-width: 1150px" srcset="img/logo-desktop-blue@1x.png">
-        <source media="min-width: 768px" srcset="img/logo-tablet-blue@1x.png">
-        <img src="img/logo-mobile-blue@1x.png" alt="Логотип сервиса направления попутчиков Погнали">
-      </picture>
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      <ul class="main-nav__wrapper">
-        <li><a class="main-nav__authorization" href="#">Авторизация</a></li>
+      <div class="main-nav__wrapper-nav">
+        <picture>
+          <source media="min-width: 1150px" srcset="img/logo-desktop-blue@1x.png">
+          <source media="min-width: 768px" srcset="img/logo-tablet-blue@1x.png">
+          <img src="img/logo-mobile-blue@1x.png" alt="Логотип сервиса направления попутчиков Погнали">
+        </picture>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <h1 class="main-nav__title">О сервисе направления попутчики</h1>
+      <ul class="main-nav__wrapper-menu">
+        <li><a class="main-nav__auth btn-oval" href="#">Авторизация</a></li>
         <li><a class="main-nav__tel" href="tel:88005558628">8 800 555-86-28</a></li>
         <li><a class="main-nav__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
       </ul>
@@ -43,9 +46,9 @@
       </ul>
     </nav>
   </header>
-<main>
-  <div class="main-content"></div>
-</main>
+  <main>
+    <div class="main-content"></div>
+  </main>
 </body>
 
 </html>
