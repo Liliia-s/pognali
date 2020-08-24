@@ -1,0 +1,11 @@
+.social {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social__item:not(:last-child) {
+  padding-right: 24px;
+  padding-left: 4px;
+}

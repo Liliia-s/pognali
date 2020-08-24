@@ -1,9 +1,13 @@
 .btn-oval {
   display: block;
-  padding: 14px;
+  padding: 10px;
   width: 270px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: $font-weight-bold;
   text-align: center;
   text-transform: uppercase;
+  color: $color-blue-dark;
   background-color: $color-yellow;
-  border-radius: 15%;
+  border-radius: 30px;
 }
