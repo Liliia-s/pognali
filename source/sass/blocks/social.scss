@@ -3,9 +3,47 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 80px;
+  }
 }
 
 .social__item:not(:last-child) {
   padding-right: 24px;
   padding-left: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 33px;
+  }
+}
+
+.social__item {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__svg--fb {
+    width: 14px;
+    height: 28px;
+  }
+
+  .social__svg--vk {
+    width: 31px;
+    height: 16px;
+  }
+
+  .social__svg--insta {
+    width: 24px;
+    height: 24px;
+  }
 }

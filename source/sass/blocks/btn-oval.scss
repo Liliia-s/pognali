@@ -10,4 +10,18 @@
   color: $color-blue-dark;
   background-color: $color-yellow;
   border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-yellow-dark;
+  }
+
+  &:active {
+    color: rgba($color-blue-dark, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 189px;
+    font-size: 20px;
+  }
 }

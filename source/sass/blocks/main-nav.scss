@@ -1,11 +1,35 @@
 .main-nav {
-  padding: 26px;
+  position: absolute;
+  padding-top: 26px;
   padding-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 86px;
+    padding-left: 40px;
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 57px;
+  }
 }
 
 .main-nav__wrapper-nav {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    // justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.main-nav__wrapper-nav--fixed {
+  position: fixed;
 }
 
 .main-nav__toggle {
@@ -34,21 +58,40 @@
 .main-nav__title {
   @include reset-indent;
   padding-top: 65px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
   font-size: 30px;
   line-height: 36px;
   font-weight: $font-weight-medium;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 450px;
+    font-size: 60px;
+    line-height: 71px;
+    text-align: left;
+    padding: 86px 0 134px 0;
+  }
 }
 
 .main-nav__wrapper-menu {
   @include reset-list;
   padding-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 133px;
+  }
 }
 
-.main-nav__item--auth {
-  padding-bottom: 50px;
+.main-nav__auth {
+  content: "";
+  position: absolute;
+  left: 25px;
+  bottom: 244px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
 
 .main-nav__link--tel,
@@ -63,6 +106,14 @@
   font-weight: $font-weight-bold;
   text-transform: uppercase;
   color: $color-blue-dark;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-left: 91px;
+    padding-bottom: 17px;
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .main-nav__link {
@@ -75,6 +126,11 @@
     height: 45px;
     background-color: $color-black-blue;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+    }
   }
 
   &::after {
@@ -95,7 +151,3 @@
     background: url("../../img/contacts-mail.svg") no-repeat;
   }
 }
-
-// .main-nav__social {
-// pb
-// }
