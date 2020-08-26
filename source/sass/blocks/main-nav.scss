@@ -1,36 +1,33 @@
 .main-nav {
-  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
   padding-top: 26px;
   padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    padding-top: 40px;
+    padding-top: 45px;
     padding-right: 40px;
     padding-bottom: 86px;
     padding-left: 40px;
   }
 }
 
-.main-nav__wrapper {
-  @media (min-width: $tablet-width) {
-    padding-left: 57px;
-  }
-}
-
-.main-nav__wrapper-nav {
+.main-nav__scroll-wrapper {
   display: flex;
   justify-content: space-between;
+  // order: 0;
 
   @media (min-width: $tablet-width) {
-    // justify-content: flex-start;
-    align-items: center;
+    order: 1;
+    width: 350px;
+    // align-items: center;
   }
 }
 
-.main-nav__wrapper-nav--fixed {
-  position: fixed;
-}
+// .main-nav__wrapper-nav--fixed {
+//   position: fixed;
+// }
 
 .main-nav__toggle {
   position: relative;
@@ -55,10 +52,30 @@
   }
 }
 
-.main-nav__title {
-  @include reset-indent;
+.main-nav__auth {
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.main-nav__menu-wrapper {
   padding-top: 65px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
+  // order: 2;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    padding: 86px 0 134px 0;
+  }
+}
+
+.main-nav__menu {
+  @include reset-list;
+}
+
+.main-nav__menu-item {
   font-size: 30px;
   line-height: 36px;
   font-weight: $font-weight-medium;
@@ -66,15 +83,20 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    max-width: 450px;
     font-size: 60px;
     line-height: 71px;
     text-align: left;
-    padding: 86px 0 134px 0;
   }
 }
 
-.main-nav__wrapper-menu {
+.main-nav__contacts-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 4;
+    padding-left: 57px;
+  }
+}
+
+.main-nav__contacts {
   @include reset-list;
   padding-bottom: 44px;
 
@@ -83,19 +105,8 @@
   }
 }
 
-.main-nav__auth {
-  content: "";
-  position: absolute;
-  left: 25px;
-  bottom: 244px;
-
-  @media (min-width: $tablet-width) {
-    position: static;
-  }
-}
-
-.main-nav__link--tel,
-.main-nav__link--mail {
+.main-nav__contacts-link--tel,
+.main-nav__contacts-link--mail {
   position: relative;
   display: block;
   padding-top: 13px;
@@ -116,7 +127,7 @@
   }
 }
 
-.main-nav__link {
+.main-nav__contacts-link {
   &::before {
     content: "";
     position: absolute;
@@ -149,5 +160,11 @@
   &--mail::after {
     top: 18px;
     background: url("../../img/contacts-mail.svg") no-repeat;
+  }
+}
+
+.main-nav__social-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 5;
   }
 }
