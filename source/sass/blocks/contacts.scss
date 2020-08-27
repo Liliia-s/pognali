@@ -1,0 +1,112 @@
+.contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.contacts__link--tel,
+.contacts__link--mail {
+  position: relative;
+  display: block;
+  padding-top: 13px;
+  padding-left: 60px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  color: $color-black-blue-2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-left: 91px;
+    padding-bottom: 17px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   font-size: 0;
+  // }
+}
+
+.contacts__link {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background-color: $color-black-blue;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+    }
+
+    // @media (min-width: $desktop-width) {
+    //   width: 50px;
+    //   height: 50px;
+    // }
+  }
+
+  // &--tel::before {
+  //   @media (min-width: $desktop-width) {
+  //     background-color: $color-orange-dark;
+  //   }
+  // }
+
+  // &--mail::before {
+  //   @media (min-width: $desktop-width) {
+  //     background-color: $color-orange;
+  //   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    width: 18px;
+    height: 18px;
+
+    @media (min-width: $tablet-width) {
+      left: 21px;
+    }
+  }
+
+  &--tel::after {
+    top: 15px;
+    background: url("../../img/contacts-phone.svg") no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 23px;
+      width: 27px;
+      height: 27px;
+    }
+
+    // @media (min-width: $desktop-width) {
+    //   width: 18px;
+    //   height: 18px;
+    //   background: url("../../img/top-menu-phone.svg") no-repeat;
+    // }
+  }
+
+  &--mail::after {
+    top: 18px;
+    background: url("../../img/contacts-mail.svg") no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 27px;
+      width: 27px;
+      height: 20px;
+    }
+
+    // @media (min-width: $desktop-width) {
+    //   width: 18px;
+    //   height: 14px;
+    //   background: url("../../img/top-menu-mail.svg") no-repeat;
+    // }
+  }
+}

@@ -19,51 +19,61 @@
 <body>
   <header>
     <div class="main-nav container">
-      <!-- <div class="main-nav__wrapper"> -->
-        <div class="main-nav__wrapper">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop-blue@1x.png">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png">
-            <img src="img/logo-mobile-blue@1x.png" alt="Логотип сервиса направления попутчиков Погнали">
-          </picture>
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        </div>
-        <nav class="main-nav__menu-wrapper">
-          <ul class="main-nav__menu">
-            <li class="main-nav__menu-item">О сервисе</li>
-            <li class="main-nav__menu-item">Направления</li>
-            <li class="main-nav__menu-item">Попутчики</li>
-          </ul>
-        <!-- </nav> -->
-        <a class="main-nav__auth btn-oval" href="#">Авторизация</a>
+      <div class="main-nav__wrapper">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png">
+          <img src="img/logo-mobile-blue@1x.png" alt="Логотип сервиса направления попутчиков Погнали">
+        </picture>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       </div>
-      <ul class="main-nav__contacts">
-        <li class="main-nav__contacts-item main-nav__contacts-item--tel"><a class="main-nav__contacts-link main-nav__contacts-link--tel" href="tel:88005558628">8 800 555-86-28</a></li>
-        <li class="main-nav__contacts-item main-nav__contacts-item--mail"><a class="main-nav__contacts-link main-nav__contacts-link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+      <nav class="main-nav__menu">
+        <ul class="main-nav__menu-list">
+          <li class="main-nav__menu-item">О сервисе</li>
+          <li class="main-nav__menu-item">Направления</li>
+          <li class="main-nav__menu-item">Попутчики</li>
+        </ul>
+      </nav>
+      <a class="main-nav__auth btn-oval" href="#">Авторизация</a>
+      <ul class="main-nav__contacts contacts">
+        <li class="contacts__item contacts__item--tel">
+          <a class="main-nav__contacts-link contacts__link contacts__link--tel" href="tel:88005558628">8 800 555-86-28
+            <svg class="main-nav__contacts-svg main-nav__contacts-svg--tel" width="18" height="18">
+              <use xlink:href="img/sprite.svg#icon-top-menu-phone"></use>
+            </svg>
+          </a></li>
+        <li class="contacts__item contacts__item--mail">
+          <a class="main-nav__contacts-link contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru
+            <svg class="main-nav__contacts-svg main-nav__contacts-svg--mail" width="18" height="14">
+              <use xlink:href="img/sprite.svg#icon-top-menu-mail"></use>
+            </svg>
+          </a></li>
       </ul>
-      <ul class="main-nav__social social">
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="Перейти в аккаунт Facebook сервиса Погнали">
-            <svg class="social__svg social__svg--fb" width="11" height="21" fill="#192144">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="Перейти в аккаунт Vkontakte сервиса Погнали">
-            <svg class="social__svg social__svg--vk" width="23" height="12" fill="#192144">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="Перейти в аккаунт Instagram сервиса Погнали">
-            <svg class="social__svg social__svg--insta" width="18" height="18" fill="#192144">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      <div class="main-nav__social">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Перейти в аккаунт Facebook сервиса Погнали">
+              <svg class="social__svg social__svg--fb" width="11" height="21" fill="#192144">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Перейти в аккаунт Vkontakte сервиса Погнали">
+              <svg class="social__svg social__svg--vk" width="23" height="12" fill="#192144">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Перейти в аккаунт Instagram сервиса Погнали">
+              <svg class="social__svg social__svg--insta" width="18" height="18" fill="#192144">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
@@ -72,3 +82,6 @@
 </body>
 
 </html>
+
+<!-- @media (min-width: $desktop-width) {
+} -->
