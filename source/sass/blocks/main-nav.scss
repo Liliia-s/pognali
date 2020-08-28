@@ -13,6 +13,8 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: nowrap;
+    padding-top: 48px;
+
     // background-color: $color-blue-dark-2;
   }
 }
@@ -91,14 +93,14 @@
   @media (min-width: $desktop-width) {
     position: relative;
     padding: 0;
-    padding-top: 15px;
+    padding-top: 12px;
     padding-left: 145px;
     margin-right: auto;
 
     &::before {
       content: "";
       position: absolute;
-      top: 29px;
+      top: 26px;
       left: 41px;
       width: 60px;
       height: 2px;
@@ -161,7 +163,10 @@
 
 .main-nav__contacts-link {
   @media (min-width: $desktop-width) {
+    position: relative;
     padding: 0;
+    padding-top: 25px;
+    padding-left: 51px;
     font-size: 0;
 
     &::before {
@@ -190,7 +195,11 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
     display: block;
+    top: 18px;
+    left: 18px;
   }
 }
 
