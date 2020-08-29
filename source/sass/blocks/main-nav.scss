@@ -4,6 +4,7 @@
   flex-direction: column;
   padding-top: 26px;
   padding-bottom: 33px;
+  background-color: $color-white;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
@@ -61,7 +62,7 @@
     transform: translateY(8px);
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
