@@ -35,7 +35,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "eslint": "eslint \"source/js/*.js\"",
-    "test": "npm run editorconfig && npm run stylelint  && npm run eslint",
+    "test": "npm run editorconfig && npm run stylelint && npm run eslint",
     "build": "gulp build",
     "start": "gulp start",
     "images": "gulp images",
@@ -51,10 +51,7 @@
     "Firefox ESR"
   ],
   "editorconfig-cli": [
-    "*.json",
-    "*.js",
     "source/*.html",
-    "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
   ],

@@ -5,6 +5,8 @@
   var mainNavAuth = document.querySelector('.main-nav__auth');
   var windowInnerWidth = window.innerWidth;
   var windowInnerClientWidth = document.body.clientWidth;
+  var screenWidth = window.screen.width;
+  var windowOuterWidth = window.outerWidth;
 
   Array.prototype.slice.call(itemsOfMenu);
 
@@ -15,7 +17,7 @@
       });
     } if ((windowInnerWidth > 767) || (windowInnerClientWidth > 767)) {
       mainNavAuth.classList.remove('display-none');
-    } if ((windowInnerWidth > 1439) || (windowInnerClientWidth > 1439)) {
+    } if ((windowInnerWidth > 1439) || (screenWidth > 1439)) {
       itemsOfMenu.forEach(function (item) {
         item.classList.remove('display-none');
       });
