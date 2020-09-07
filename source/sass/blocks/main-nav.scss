@@ -71,6 +71,7 @@
   margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     order: 2;
     margin-top: -53px;
     margin-bottom: 0;
@@ -201,6 +202,14 @@
     display: block;
     top: 18px;
     left: 18px;
+  }
+}
+
+.main-nav--hide {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
