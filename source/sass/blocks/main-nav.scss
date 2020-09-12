@@ -4,7 +4,7 @@
   flex-direction: column;
   padding-top: 26px;
   padding-bottom: 33px;
-  background-color: $color-white;
+  background-color: $color-blue-dark-3;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
@@ -23,7 +23,7 @@
 .main-nav__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 64px;
+  // padding-bottom: 64px;
 
   @media (min-width: $tablet-width) {
     order: 1;

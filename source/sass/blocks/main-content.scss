@@ -1,0 +1,21 @@
+.main-content {
+  padding-top: 7px;
+  background:
+    url("../img/traveller-illustration-mobile@1x.webp") no-repeat 61% 100%,
+    url("../img/globe-back-mobile@1x.webp") no-repeat $color-blue-dark-3 100% 48%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/globe-back-mobile@2x.webp");
+    // background-size: 575px auto;
+  }
+}
+
+.main-content__title {
+  @include reset-indent;
+  padding-bottom: 267px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: $color-white;
+}
