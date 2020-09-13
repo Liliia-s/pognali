@@ -49,6 +49,7 @@
         <li class="contacts__item contacts__item--mail">
           <a class="main-nav__contacts-link main-nav__contacts-link--mail contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru
             <svg class="main-nav__contacts-svg main-nav__contacts-svg--mail" width="18" height="14">
+
               <use xlink:href="img/sprite.svg#icon-top-menu-mail"></use>
             </svg>
           </a></li>
@@ -84,20 +85,23 @@
     <div class="main-content container">
       <h1 class="main-content__title">В путешествие с крутыми попутчиками!
       </h1>
-      <!-- <ul class="contacts contacts--orange">
-        <li class="contacts-orange__ contacts__item contacts__item--tel">
-          <a class="main-nav__contacts-link main-nav__contacts-link--tel contacts__link contacts__link--tel" href="tel:88005558628">8 800 555-86-28
-            <svg class="main-nav__contacts-svg main-nav__contacts-svg--tel" width="18" height="18">
-              <use xlink:href="img/sprite.svg#icon-top-menu-phone"></use>
-            </svg>
-          </a></li>
-        <li class="contacts__item contacts__item--mail">
-          <a class="main-nav__contacts-link main-nav__contacts-link--mail contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru
-            <svg class="main-nav__contacts-svg main-nav__contacts-svg--mail" width="18" height="14">
-              <use xlink:href="img/sprite.svg#icon-top-menu-mail"></use>
-            </svg>
-          </a></li>
-      </ul> -->
+      <div class="main-content__wrapper">
+        <ul class="main-content__contacts contacts-orange">
+          <li class="contacts-orange__item contacts-orange__item--tel">
+            <a class="contacts-orange__link contacts-orange__link--tel" href="tel:88005558628">
+              <svg class="contacts-orange__svg contacts-orange__svg--tel" width="18" height="18" fill="yellow">
+                <use xlink:href="img/sprite.svg#icon-top-menu-phone"></use>
+              </svg>
+            </a></li>
+          <li class="contacts-orange__item contacts-orange__item--mail">
+            <a class="contacts-orange__link contacts-orange__link--mail" href="mailto:mail@htmlacademy.ru">
+              <svg class="contacts-orange__svg contacts-orange__svg--mail" width="18" height="14" fill="yellow">
+                <use xlink:href="img/sprite.svg#icon-top-menu-mail"></use>
+              </svg>
+            </a></li>
+        </ul>
+        <!-- <a class="main-content__auth btn-oval" href="#">Авторизация</a> -->
+      </div>
 
     </div>
   </main>
