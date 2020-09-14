@@ -1,0 +1,9 @@
+.promo-header__title {
+  @include reset-indent;
+  padding-bottom: 267px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: $color-white;
+}

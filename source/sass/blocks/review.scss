@@ -1,0 +1,21 @@
+.review__item {
+  @include reset-indent;
+  max-width: 170px;
+}
+
+.review__text,
+.review__user-name {
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-white;
+}
+
+.review__text {
+  @include reset-indent;
+  padding-bottom: 18px;
+}
+
+.review__user-name {
+  font-weight: bold;
+  font-style: normal;
+}

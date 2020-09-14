@@ -81,28 +81,50 @@
       </div> -->
     </div>
   </header>
-  <main>
-    <div class="main-content container">
-      <h1 class="main-content__title">В путешествие с крутыми попутчиками!
-      </h1>
-      <div class="main-content__wrapper">
-        <ul class="main-content__contacts contacts-orange">
-          <li class="contacts-orange__item contacts-orange__item--tel">
-            <a class="contacts-orange__link contacts-orange__link--tel" href="tel:88005558628">
-              <svg class="contacts-orange__svg contacts-orange__svg--tel" width="18" height="18" fill="yellow">
+  <main class="main-content">
+    <div class="main-content__wrapper">
+      <section class="main-content__wrapper-title promo-header container">
+        <h1 class="promo-header__title">В путешествие с крутыми попутчиками!</h1>
+      </section>
+      <section class="main-content__contacts container">
+        <h2 class="visually-hidden">Меню пользователя</h2>
+        <ul class="user-menu">
+          <li class="user-menu__item user-menu__item--tel">
+            <a class="user-menu__link user-menu__link--tel" href="tel:88005558628">
+              <svg class="user-menu__svg user-menu__svg--tel" width="18" height="18" fill="#161c35">
                 <use xlink:href="img/sprite.svg#icon-top-menu-phone"></use>
               </svg>
             </a></li>
-          <li class="contacts-orange__item contacts-orange__item--mail">
-            <a class="contacts-orange__link contacts-orange__link--mail" href="mailto:mail@htmlacademy.ru">
-              <svg class="contacts-orange__svg contacts-orange__svg--mail" width="18" height="14" fill="yellow">
+          <li class="user-menu__item user-menu__item--mail">
+            <a class="user-menu__link user-menu__link--mail" href="mailto:mail@htmlacademy.ru">
+              <svg class="user-menu__svg user-menu__svg--mail" width="18" height="14" fill="#161c35">
                 <use xlink:href="img/sprite.svg#icon-top-menu-mail"></use>
               </svg>
             </a></li>
+          <li class="user-menu__item user-menu__item--mail">
+            <a class="user-menu__item user-menu__link--auth btn-oval" href="#">Авторизация</a>
+            </a></li>
         </ul>
-        <!-- <a class="main-content__auth btn-oval" href="#">Авторизация</a> -->
-      </div>
-
+      </section>
+      <section class="main-content__review review container">
+        <h2 class="visually-hidden">Отзыв о сервисе</h2>
+        <blockquote class="review__item">
+          <p class="review__text">
+            «Лучшее приложение, что я видел в жизни!»
+          </p>
+          <cite class="review__user-name">
+            Мурат Эльтазин главный редактор газеты «гаджетлайф»
+          </cite>
+        </blockquote>
+      </section>
+      <section class="main-content__howto howto container">
+        <ul class="howto__list">
+          <li class="howto__item">Выберите направление</li>
+          <li class="howto__item">Изучите идеи путешественников</li>
+          <li class="howto__item">Находите тех, кто похож на вас</li>
+          <li class="howto__item">Путешествуйте вместе!</li>
+        </ul>
+      </section>
     </div>
   </main>
   <script src="js/menu.js"></script>

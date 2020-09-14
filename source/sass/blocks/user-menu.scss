@@ -1,11 +1,13 @@
-.contacts-orange {
+.user-menu {
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
 }
 
-.contacts-orange__link {
-  display: block;
+.user-menu__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -17,12 +19,8 @@
   &--mail {
     background-color: $color-orange;
   }
-}
 
-// .contacts-orange__svg {
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   top: 18px;
-//   left: 18px;
-// }
+  &--auth {
+    min-width: 189px;
+  }
+}

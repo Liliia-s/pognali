@@ -1,0 +1,66 @@
+.howto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.howto__list {
+  @include reset-list;
+}
+
+.howto__item {
+  position: relative;
+  margin-bottom: -15px;
+  padding-top: 23px;
+  padding-left: 23px;
+  padding-bottom: 36px;
+  padding-right: 70px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $color-blue-dark;
+  border-radius: 10px;
+
+  &::after {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    color: $color-white;
+  }
+
+  &:last-child {
+    padding-bottom: 22px;
+  }
+
+  &:nth-child(1) {
+    background-color: $color-orange-dark;
+
+    &::after {
+      content: "1";
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: $color-orange;
+
+    &::after {
+      content: "2";
+    }
+  }
+
+  &:nth-child(3) {
+    background-color: $color-yellow-dark;
+
+    &::after {
+      content: "3";
+    }
+  }
+
+  &:nth-child(4) {
+    background-color: $color-yellow;
+
+    &::after {
+      content: "4";
+    }
+  }
+}
